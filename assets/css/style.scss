@@ -6,7 +6,12 @@ body {
   background: #151515 url("../images/blog-background.jpg");
   background-attachment: fixed;
   background-position: center top;
-  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
 }
 
 header {
@@ -66,4 +71,8 @@ a.btn {
 
 .btn:hover {
     background: #181818
+}
+
+.container a {
+  margin-bottom: 10px;
 }
