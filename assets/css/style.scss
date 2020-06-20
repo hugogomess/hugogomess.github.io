@@ -3,13 +3,23 @@
 @import 'jekyll-theme-hacker';
 
 body {
-  background: #151515 url("../images/blog-background.jpg") 0 0;
+  background: #151515 url("../images/blog-background.jpg");
   background-attachment: fixed;
+  background-position: center top;
+  background-size: 100% auto;
 }
 
 header {
   margin-top: 10px;
   text-align: center;
+}
+
+.home h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.home p {
+  padding-left: 25px;
 }
 
 header, th, hr {
