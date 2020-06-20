@@ -1,0 +1,11 @@
+<header>
+	<div class="container">
+		{%- assign default_paths = site.pages | map: "path" -%}
+		{%- assign page_paths = site.header_pages | default: default_paths -%}
+		{%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+		<h1>{{ site.title | default: site.github.repository_name }}</h1>
+		<a class="btn" href="https://hugogomess.github.io/">Home</a>
+		<a class="btn" href="https://github.com/hugogomess/" target="_blank"><i class="icon-github"></i> GitHub</a>
+		<!-- <a class="btn" href="https://twitter.com/twitter/" target="_blank"><i class="icon-twitter"></i> Twitter</a> -->
+	</div>
+</header>
