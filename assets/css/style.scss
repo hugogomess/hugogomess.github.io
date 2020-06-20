@@ -1,0 +1,52 @@
+@import 'jekyll-theme-hacker';
+
+body {
+  background: #151515 url("../images/blog-background.jpg") 0 0;
+  background-attachment: fixed;
+}
+
+header, th, hr {
+  border-bottom: 1px dashed #00b4ff; 
+}
+
+header h1 {
+  padding-left: 35px; 
+}
+
+header h1, h1, h2, h3, h4, h5, h6 {
+  color: #00b4ff;
+}
+
+header h1:before {
+  font-size: 30px;
+}
+
+header h1:hover {
+  font-size: 30px;
+}
+
+a.btn {
+    text-decoration: none
+}
+
+.btn .icon {
+    float: none;
+    margin: 0
+}
+
+.post-content img {
+    margin: auto;
+    display: block
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #63c0f5;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.75);
+    box-shadow: none;
+    border-radius: 0
+}
+
+.btn:hover {
+    background: #181818
+}
