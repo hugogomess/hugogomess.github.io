@@ -11,10 +11,7 @@
     </p>
 
     <h2>Email</h2>
-    <p>
-      {{ email }} -- 0x67da650228bcbfe8 --
-      <a href="./publickey.asc">PUBLIC KEY</a>
-    </p>
+    <p>{{ email }}</p>
   </section>
 </template>
 
@@ -26,7 +23,7 @@ export default Vue.extend({
   data() {
     return {
       config,
-      email: "<raphael.at.crvx.fr>"
+      email: "<hugogomes02@gmail.com>"
     };
   }
 });

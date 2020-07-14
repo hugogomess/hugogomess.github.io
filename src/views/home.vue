@@ -4,24 +4,21 @@
 
     <h1 class="title-section">
       Hugo
-      <a :href="config.links.social.twitter" target="_blank">@hugogomess</a>
+      <a :href="config.links.social.github" target="_blank">@hugogomess</a>
     </h1>
 
-    <p>Web developer, also security and OSINT enthusiast.</p>
+    <p>Web developer, offensive security enthusiast, bug hunter, IT student and ctf player in free time.</p>
 
     <ul>
       <li>
-        <router-link :to="{ name: 'articles'}">Write-ups</router-link>
+        <router-link :to="{ name: 'articles'}">Articles</router-link>
       </li>
       <li>
         <a :href="config.links.social.github" target="_blank">GitHub</a>
       </li>
       <li>
-        <router-link :to="{ name: 'resources'}">Resources</router-link>
+        <router-link :href="config.links.social.linkedin" target="_blank">Linkedin</router-link>
       </li>
-      <!-- <li>
-            <router-link :to="{ name: 'stats' }">Stats</router-link>
-      </li>-->
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>
