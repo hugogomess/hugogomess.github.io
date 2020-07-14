@@ -12,11 +12,6 @@
     "lint": "tslint --project .",
     "test": "echo \"no test specified\" && exit 0"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "keywords": [],
   "author": {
     "name": "Hugo",
@@ -29,11 +24,12 @@
     "vue-router": "^3.0.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
+    "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "cross-env": "^5.2.0",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
+    "husky": "^3.0.0",
     "mini-css-extract-plugin": "^0.7.0",
     "ts-loader": "^6.0.4",
     "tslint": "^5.18.0",

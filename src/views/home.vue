@@ -3,8 +3,8 @@
     <img src="../static/spy.svg" class="margin-bottom" width="128" height="auto" alt />
 
     <h1 class="title-section">
-      Raphaël
-      <a :href="config.links.social.twitter" target="_blank">@sundowndev</a>
+      Hugo
+      <a :href="config.links.social.twitter" target="_blank">@hugogomess</a>
     </h1>
 
     <p>Web developer, also security and OSINT enthusiast.</p>
