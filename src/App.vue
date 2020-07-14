@@ -1,4 +1,23 @@
+<template>
+  <div id="app" class="container main-content">
+    <transition name="fade" mode="out-in" :duration="300">
+      <router-view/>
+    </transition>
+  </div>
+</template>
 
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  data() {
+    return {};
+  }
+});
+</script>
+
+
+<style>
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s ease;
 }
@@ -110,27 +129,33 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after {
   content: "";
   content: none;
 }
+
 q:before,
 q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -144,6 +169,7 @@ table {
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Hack";
   src: url("/fonts/hack-bold.woff2") format("woff2"),
@@ -158,32 +184,41 @@ body {
   background-color: #f5f5f5;
   color: #161616;
 }
+
 .margin-top {
   margin-top: 15px;
 }
+
 .margin-top-30 {
   margin-top: 30px;
 }
+
 .margin-bottom {
   margin-bottom: 15px;
 }
+
 .margin-bottom-30 {
   margin-bottom: 30px;
 }
+
 .text-center {
   text-align: center;
 }
+
 img {
   max-width: 100%;
 }
+
 .section img.rounded {
   border-radius: 130px;
   margin-bottom: 30px;
 }
+
 .container {
   z-index: 3;
   position: relative;
 }
+
 .container.main-content {
   width: 900px;
   margin: auto;
@@ -202,19 +237,20 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 @media (min-width: 1280px) {
-.bg-image {
+  .bg-image {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-filter: blur(3px);
     filter: blur(3px);
     background-size: 102%;
     background-position: center;
-}
-.bg-overlay.transparent {
+  }
+  .bg-overlay.transparent {
     opacity: 0.9;
-}
-.menu-social {
+  }
+  .menu-social {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -225,58 +261,66 @@ img {
     justify-content: flex-end;
     padding-top: 50px;
     width: 100%;
-}
-.menu-social .icon {
+  }
+  .menu-social .icon {
     font-size: 20px;
     color: #ffffff;
     -webkit-transition: 0.25s;
     transition: 0.25s;
     margin-left: 25px;
-}
-.menu-social .icon:hover {
+  }
+  .menu-social .icon:hover {
     color: #ffc400;
+  }
 }
-}
+
 @media (max-width: 900px) {
-.container {
+  .container {
     margin: 0 30px;
-}
-.container.main-content {
+  }
+  .container.main-content {
     width: 92%;
     min-height: 0;
     margin-top: 50px;
     margin-bottom: 50px;
-}
-.container.main-content .section {
+  }
+  .container.main-content .section {
     width: 100%;
+  }
 }
-}
+
 section {
   margin: auto;
   width: 100%;
 }
+
 section.active {
   display: block;
 }
+
 section h1 {
   font-size: 24px;
   font-weight: bold;
   padding: 15px 0;
   margin-bottom: 20px;
 }
+
 section h2 {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
 section p {
   font-weight: 300;
   line-height: 26px;
   margin-bottom: 30px;
 }
+
 section .icon {
   font-size: 32px;
 }
+
 a {
   text-decoration: none;
   color: #000;
@@ -285,33 +329,13 @@ a {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 a:hover {
   border-bottom: 2px solid #161616d2;
 }
+
 #back-link {
   margin-bottom: 10px;
   display: inline-block;
 }
-
-
-ul li a {
-  margin: 0 20px 0 0;
-  line-height: 30px;
-}
-
-
-ul li {
-  display: inline-block;
-}
-ul li a {
-  margin: 0 20px;
-}
-
-
-ul li a {
-  margin: 0 20px 0 0;
-  line-height: 30px;
-}
-
-
-/*# sourceMappingURL=style.css.map*/
+</style>
