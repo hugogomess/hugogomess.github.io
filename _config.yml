@@ -1,8 +1,0 @@
-theme: jekyll-theme-hacker
-# Site settings
-title: hugogomess
-baseurl: "" # the subpath of your site, e.g. /blog
-description: > # this means to ignore newlines until "baseurl:"
-  Posts about python, nodejs, backend and web hacking...
-plugins:
-  - jekyll-seo-tag
