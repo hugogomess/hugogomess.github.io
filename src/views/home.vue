@@ -11,13 +11,10 @@
 
     <ul>
       <li>
+        <router-link :to="{ name: 'resources'}">Projects</router-link>
+      </li>
+      <li>
         <router-link :to="{ name: 'articles'}">Articles</router-link>
-      </li>
-      <li>
-        <a :href="config.links.social.github" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <router-link :href="config.links.social.linkedin" target="_blank">Linkedin</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>

@@ -6,12 +6,11 @@
     <h2>Social media</h2>
     <p>
       You can find me on
-      <a :href="config.links.social.twitter" target="_blank">Twitter</a> and
+      <a :href="config.links.social.github" target="_blank">Github</a> and
       <a :href="config.links.social.linkedin" target="_blank">Linkedin</a>.
     </p>
 
-    <h2>Email</h2>
-    <p>{{ email }}</p>
+    <h2>Email: <a :href="config.links.social.email" target="_blank">{{ email }}</a></h2>
   </section>
 </template>
 
@@ -23,7 +22,7 @@ export default Vue.extend({
   data() {
     return {
       config,
-      email: "<hugogomes02@gmail.com>"
+      email: "hugogomes02@gmail.com"
     };
   }
 });
