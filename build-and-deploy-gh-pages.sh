@@ -5,6 +5,7 @@ cp ./build/index.html ./build/404.html;
 git checkout master;
 files=$(ls);
 rm $files;
+rm -rf fonts;
 mv ./build/* ./;
 mv ./build/fonts/* ./fonts;
 rm -rf ./build;
