@@ -6,7 +6,7 @@ files=$(ls);
 rm $files;
 rm -rf fonts;
 mv ./build/* ./;
-mv ./build/fonts/* ./fonts;
+mv ./build/fonts ./fonts;
 rm -rf ./build;
 git add . && git commit -m "build for gh-pages" && git push origin master;
 git checkout dev;
