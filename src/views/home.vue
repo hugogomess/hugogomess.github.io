@@ -7,7 +7,7 @@
       <a :href="config.links.social.github" target="_blank">@hugogomess</a>
     </h1>
 
-    <p>Web developer, offensive security enthusiast, bug hunter, IT student and ctf player in free time.</p>
+    <p>Web developer, offensive security enthusiast, bug hunter and ctf player in free time.</p>
 
     <ul>
       <li>
