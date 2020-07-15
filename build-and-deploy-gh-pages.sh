@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cp -r ./public ./build;
-cp ./build/index.html ./build/404.html;
+cp -r ./public ./build
 git checkout master;
 files=$(ls);
 rm $files;
