@@ -1,7 +1,10 @@
 #!/bin/bash
 
 cp -r ./public ./build;
+cp ./build/index.html ./build/404.html;
 git checkout master;
+files=$(ls);
+rm $files;
 mv ./build/* ./;
 mv ./build/fonts/* ./fonts;
 rm -rf ./build;
