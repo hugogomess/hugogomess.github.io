@@ -11,11 +11,14 @@
 
     <ul>
       <li>
-        <router-link :to="{ name: 'resources'}">Projects</router-link>
+        <router-link :to="{ name: 'projects'}">Projects</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'resources'}">Skills</router-link>
+        <router-link :to="{ name: 'skills'}">Skills</router-link>
       </li>
+      <li>
+        <router-link :to="{ name: 'experience'}">Experience</router-link>
+      </li
       <li>
         <router-link :to="{ name: 'articles'}">Articles</router-link>
       </li>

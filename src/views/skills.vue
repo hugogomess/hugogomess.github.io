@@ -1,12 +1,9 @@
 <template>
   <section class="section">
     <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
-    <h1 class="title-section">Articles</h1>
+    <h1 class="title-section">Skill Set</h1>
 
-    <p>
-      You can follow my stories on
-      <a :href="config.links.social.medium" target="_blank">Medium</a>.
-    </p>
+    <p>Here you can find my developer skill set</p>
 
     <ul>
       <!-- <li v-for="(item, index) in articles" :key="index">
@@ -14,7 +11,7 @@
           <a :href="item.url" target="_blank">{{ item.title }}</a>
         </h2>
       </li> -->
-      <li><h2>There's no articles yet, back again later...</h2></li>
+      <li><h2>I will add it here later haha, back again another day.</h2></li>
     </ul>
   </section>
 </template>
