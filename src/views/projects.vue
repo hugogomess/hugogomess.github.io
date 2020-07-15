@@ -5,15 +5,14 @@
 
     <p>Here, you can find my open source projects.</p>
 
-    <h1>I will add my projects here later haha, back again another day.</h1>
-
-    <!-- <ul>
-      <li v-for="(item, index) in links" :key="index">
+    <ul>
+      <!-- <li v-for="(item, index) in links" :key="index">
         <h2>
           <a :href="item.url" target="_blank">{{ item.title }}</a>
         </h2>
-      </li>
-    </ul> -->
+      </li> -->
+      <li><h2>I will add it here later haha, back again another day.</h2></li>
+    </ul>
 
   </section>
 </template>
