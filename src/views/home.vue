@@ -7,11 +7,16 @@
       <a :href="config.links.social.github" target="_blank">@hugogomess</a>
     </h1>
 
+    <h1>UNDER CONSTRUCTION</h1>
+
     <p>Web developer, offensive security enthusiast, bug hunter, IT student and ctf player in free time.</p>
 
     <ul>
       <li>
         <router-link :to="{ name: 'resources'}">Projects</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'resources'}">Skills</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'articles'}">Articles</router-link>
