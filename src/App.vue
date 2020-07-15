@@ -331,7 +331,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid #706f6d;
+  border-bottom: 2px solid #494847;
 }
 
 #back-link {

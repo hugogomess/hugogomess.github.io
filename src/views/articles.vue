@@ -1,11 +1,11 @@
 <template>
   <section class="section">
     <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
-    <h1 class="title-section">Write-ups</h1>
+    <h1 class="title-section">Articles</h1>
 
     <p>
       You can follow my stories on
-      <a :href="config.links.social.medium">Medium</a>.
+      <a :href="config.links.social.medium" target="_blank">Medium</a>.
     </p>
 
     <ul>
