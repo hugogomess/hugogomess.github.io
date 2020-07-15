@@ -18,7 +18,7 @@
       </li>
       <li>
         <router-link :to="{ name: 'experience'}">Experience</router-link>
-      </li
+      </li>
       <li>
         <router-link :to="{ name: 'articles'}">Articles</router-link>
       </li>
