@@ -325,13 +325,13 @@ a {
   text-decoration: none;
   color: #000;
   padding-bottom: 3px;
-  border-bottom: 2px solid #1616163b;
+  border-bottom: 2px solid #878683;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 a:hover {
-  border-bottom: 2px solid #161616d2;
+  border-bottom: 2px solid #bebebe;
 }
 
 #back-link {

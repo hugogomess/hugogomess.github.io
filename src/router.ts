@@ -15,15 +15,8 @@ const routes = [
   { path: '/articles', name: 'articles', component: Articles },
   { path: '/resources', name: 'resources', component: Resources },
   { path: '/contact', name: 'contact', component: Contact },
-  {
-    path: '/notfound',
-    name: 'not_found',
-    component: NotFound,
-  },
-  {
-    path: '*',
-    redirect: '/notfound',
-  },
+  { path: '/notfound', name: 'not_found', component: NotFound },
+  { path: '*', redirect: '/notfound' },
 ];
 
 export default new VueRouter({ mode: 'history', routes });
