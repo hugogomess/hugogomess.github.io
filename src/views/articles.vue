@@ -9,11 +9,12 @@
     </p>
 
     <ul>
-      <li v-for="(item, index) in articles" :key="index">
+      <!-- <li v-for="(item, index) in articles" :key="index">
         <h2>
           <a :href="item.url" target="_blank">{{ item.title }}</a>
         </h2>
-      </li>
+      </li> -->
+      <li><h2>There's no articles yet, come back later...</h2></li>
     </ul>
   </section>
 </template>
