@@ -13,7 +13,8 @@
 
     <h2>Email: <a :href="config.links.social.email" target="_blank">{{ email }}</a></h2>
 
-    <h2>Badges</h2>
+    <br/>
+
     <p>
       <a class="no-border" href="https://www.hackthebox.eu/home/users/profile/323852" target="_blank">
         <img src="http://www.hackthebox.eu/badge/image/323852" alt="Hack The Box">
