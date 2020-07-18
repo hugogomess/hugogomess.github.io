@@ -13,11 +13,12 @@
 
     <h2>Email: <a :href="config.links.social.email" target="_blank">{{ email }}</a></h2>
 
+    <h2>Badges</h2>
     <p>
-      <a href="https://www.hackthebox.eu/home/users/profile/323852" target="_blank">
+      <a class="no-border" href="https://www.hackthebox.eu/home/users/profile/323852" target="_blank">
         <img src="http://www.hackthebox.eu/badge/image/323852" alt="Hack The Box">
       </a>
-      <a href="https://tryhackme.com/p/0xkaneki" target="_blank">
+      <a class="no-border" href="https://tryhackme.com/p/0xkaneki" target="_blank">
         <img src="https://tryhackme-badges.s3.amazonaws.com/0xkaneki.png" alt="TryHackMe">
       </a>
     </p>

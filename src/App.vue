@@ -350,6 +350,12 @@ a {
 table {
   border-color: #545b5e !important;
 }
+.no-border {
+  border-bottom: none !important;
+}
+.no-border:hover {
+  border-bottom: none !important;
+}
 ::placeholder {
   color: #b2aba1 !important;
 }
