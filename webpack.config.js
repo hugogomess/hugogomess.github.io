@@ -73,16 +73,17 @@ module.exports = {
     },
   },
   devServer: {
-    clientLogLevel: 'warning',
-    historyApiFallback: {
-      rewrites: [{ from: /.*/, to: 'index.html' }],
-    },
-    compress: true,
-    host: HOST || '0.0.0.0',
-    port: PORT || 3000,
-    publicPath: '/',
-    quiet: true,
-    hot: true,
+    // clientLogLevel: 'warning',
+    // historyApiFallback: {
+    //   rewrites: [{ from: /.*/, to: 'index.html' }],
+    // },
+    // compress: true,
+    // host: HOST || '0.0.0.0',
+    // port: PORT || 3000,
+    // publicPath: '/',
+    // quiet: true,
+    // hot: true,
+    contentBase: path.resolve(__dirname, 'public'),
   },
   performance: {
     hints: false,
