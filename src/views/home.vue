@@ -17,9 +17,6 @@
         <router-link :to="{ name: 'skills'}">Skills</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'experience'}">Experience</router-link>
-      </li>
-      <li>
         <router-link :to="{ name: 'articles'}">Articles</router-link>
       </li>
       <li>
@@ -36,9 +33,9 @@ import config from "../config";
 export default Vue.extend({
   data() {
     return {
-      config
+      config,
     };
-  }
+  },
 });
 </script>
 

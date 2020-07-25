@@ -6,7 +6,6 @@ import Articles from './views/articles.vue';
 import Contact from './views/contact.vue';
 import Home from './views/home.vue';
 import NotFound from './views/notFound.vue';
-import Experience from './views/experience.vue';
 import Projects from './views/projects.vue';
 import Skills from './views/skills.vue';
 
@@ -15,7 +14,6 @@ Vue.use(VueRouter);
 const routes = [
   { path: '/', name: 'home', component: Home },
   { path: '/articles', name: 'articles', component: Articles },
-  { path: '/experience', name: 'experience', component: Experience },
   { path: '/projects', name: 'projects', component: Projects },
   { path: '/skills', name: 'skills', component: Skills },
   { path: '/contact', name: 'contact', component: Contact },
