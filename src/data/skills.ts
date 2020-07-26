@@ -10,16 +10,18 @@ work-experience
 
 export default [
   {
-    name: 'Languages',
+    name: 'Cyber Security',
     items: [
-      { name: 'Javascript', tags: ['beginner', 'interested'] },
-      { name: 'Typescript', tags: ['advanced', 'work-experience'] },
-      { name: 'sdfdsa dsaf dsaf ', tags: ['intermediary', 'work-experience'] },
-      { name: 'Typescript', tags: ['advanced', 'work-experience'] },
-      { name: 'Javascript', tags: ['intermediary', 'interested'] },
-      { name: 'Typescript', tags: ['beginner', 'work-experience'] },
-      { name: 'sdfdsa dsaf dsaf ', tags: ['intermediary', 'work-experience'] },
-      { name: 'Typescript', tags: ['advanced', 'not-interested'] },
+      { name: 'Offensive Security', tags: ['beginner', 'interested'] },
+      { name: 'Web Hacking', tags: ['beginner', 'interested'] },
+      { name: 'Information Gathering', tags: ['beginner', 'interested'] },
+      { name: 'Scanning', tags: ['beginner', 'interested'] },
+      { name: 'Vulnerability Analysis', tags: ['beginner', 'interested'] },
+      { name: 'Exploit Development', tags: ['beginner', 'interested'] },
+      { name: 'Metasploit Framework', tags: ['beginner', 'interested'] },
+      { name: 'Burpsuite, OWASP ZAP', tags: ['beginner', 'interested'] },
+      { name: 'Privilege Escalation', tags: ['beginner', 'interested'] },
+      { name: 'CTF, Bug Bounty', tags: ['beginner', 'interested'] },
     ],
   },
 ];

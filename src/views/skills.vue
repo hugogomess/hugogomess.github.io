@@ -1,9 +1,9 @@
 <template>
   <section class="section">
     <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
-    <h1 class="title-section">Skill Set</h1>
+    <h1 class="title-section">Skills</h1>
 
-    <p>My skill set separated by different categories</p>
+    <p>My skills separated by different categories</p>
 
     <div v-for="(skill, index) in skills" :key="index" class="skill-container">
       <header>
@@ -49,13 +49,12 @@ ul li a {
 }
 
 .skill-container {
-  background-color: rgb(64, 61, 88);
+  background-color: rgb(20, 20, 20);
+  border: solid 1px #878683;
   border-radius: 16px;
   color: white;
   height: 100pct;
   width: 50%;
-  align-items: center;
-  justify-content: center;
   padding: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -83,12 +82,13 @@ ul li a {
 }
 
 .skill-tdata {
-  border-bottom: 1px solid rgb(81, 78, 105);
+  border-bottom: 1px solid #494847;
   padding: 2px;
+  width: 52%;
 }
 
 .skill-tfixed {
-  border-bottom: 1px solid rgb(81, 78, 105);
+  border-bottom: 1px solid #494847;
   padding: 2px;
   width: 212px;
 }
