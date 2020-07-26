@@ -4,7 +4,6 @@ export default {
     social: {
       email: 'mailto:hugogomes02@gmail.com',
       linkedin: 'https://www.linkedin.com/in/hugogomess/',
-      twitter: 'https://twitter.com/0xkaneki',
       medium: 'https://medium.com/@hugogomess',
       github: 'https://github.com/hugogomess',
     },

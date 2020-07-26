@@ -6,8 +6,7 @@
     <h2>Social media</h2>
     <p>
       You can find me on
-      <a :href="config.links.social.github" target="_blank">Github</a>,
-      <a :href="config.links.social.twitter" target="_blank">Twitter</a> and
+      <a :href="config.links.social.github" target="_blank">Github</a> and
       <a :href="config.links.social.linkedin" target="_blank">Linkedin</a>.
     </p>
 
@@ -29,10 +28,7 @@
         href="https://www.hackthebox.eu/home/users/profile/323852"
         target="_blank"
       >
-        <img
-          src="http://www.hackthebox.eu/badge/image/323852"
-          alt="Hack The Box"
-        />
+        <img src="http://www.hackthebox.eu/badge/image/323852" alt="Hack The Box" />
       </a>
     </p>
   </section>
