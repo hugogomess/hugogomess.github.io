@@ -1,11 +1,11 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
+    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
     <h1 class="title-section">Articles</h1>
 
     <p>
       You can follow my stories on
-      <a :href="config.links.social.medium" target="_blank">Medium</a>.
+      <a :href="social.links.medium" target="_blank">Medium</a>.
     </p>
 
     <ul>
@@ -13,34 +13,24 @@
         <h2>
           <a :href="item.url" target="_blank">{{ item.title }}</a>
         </h2>
-      </li> -->
-      <li><h2>There's no articles yet, back again later...</h2></li>
+      </li>-->
+      <li>
+        <h2>There's no articles yet, back again later...</h2>
+      </li>
     </ul>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import config from "../config";
+import social from "../data/social";
 
 export default Vue.extend({
   data() {
     return {
-      config,
-      articles: [
-        {
-          title: "Building an OSINT Reconnaissance Tool from Scratch",
-          url:
-            "https://medium.com/@SundownDEV/phone-number-scanning-osint-recon-tool-6ad8f0cac27b"
-        },
-        {
-          title: "How importants are HTTP security headers ?",
-          url:
-            "https://medium.com/@SundownDEV/how-important-are-http-security-headers-ad511848eb95"
-        }
-      ]
+      social,
     };
-  }
+  },
 });
 </script>
 

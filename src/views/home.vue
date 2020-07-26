@@ -4,20 +4,20 @@
 
     <h1 class="title-section">
       Hugo
-      <a :href="config.links.social.github" target="_blank">@hugogomess</a>
+      <a :href="social.links.github" target="_blank">@hugogomess</a>
     </h1>
 
     <p>Web developer, offensive security enthusiast and ctf player.</p>
 
     <ul>
       <li>
-        <router-link :to="{ name: 'projects'}">Projects</router-link>
+        <router-link :to="{ name: 'projects' }">Projects</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'skills'}">Skills</router-link>
+        <router-link :to="{ name: 'skills' }">Skills</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'articles'}">Articles</router-link>
+        <router-link :to="{ name: 'articles' }">Articles</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
@@ -28,12 +28,12 @@
 
 <script lang="ts">
 import Vue from "vue";
-import config from "../config";
+import social from "../data/social";
 
 export default Vue.extend({
   data() {
     return {
-      config,
+      social,
     };
   },
 });
