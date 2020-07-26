@@ -74,6 +74,10 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, "public"),
+    port: 3000,
+    historyApiFallback: {
+      index: "index.html",
+    },
   },
   performance: {
     hints: false,

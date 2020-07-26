@@ -4,6 +4,7 @@ advanced
 beginner
 interested
 intermediary
+not-interested
 work-experience
 */
 
@@ -11,15 +12,8 @@ export default [
   {
     name: 'Languages',
     items: [
-      { name: 'Javascript', tags: ['advanced', 'work-experience', 'beginner', 'interested', 'intermediary'] },
+      { name: 'Javascript', tags: ['intermediary', 'work-experience'] },
       { name: 'Typescript', tags: ['advanced', 'work-experience'] },
-    ],
-  },
-  {
-    name: 'Back End',
-    items: [
-      { name: 'Node.JS', tags: ['advanced', 'work-experience'] },
-      { name: 'REST APIs', tags: ['advanced', 'work-experience'] },
     ],
   },
 ];

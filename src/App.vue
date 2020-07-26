@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container main-content">
     <transition name="fade" mode="out-in" :duration="300">
-      <router-view/>
+      <router-view />
     </transition>
   </div>
 </template>
@@ -12,17 +12,19 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {};
-  }
+  },
 });
 </script>
 
 
 <style>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
-.fade-enter, .fade-leave-active {
-  opacity: 0
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 
 /* Reset style */
@@ -339,7 +341,12 @@ a:hover {
   display: inline-block;
 }
 
-html, body, input, textarea, select, button {
+html,
+body,
+input,
+textarea,
+select,
+button {
   background-color: #181a1b !important;
   border-color: #736b5e !important;
   color: #e8e6e3 !important;

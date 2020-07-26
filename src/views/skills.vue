@@ -5,26 +5,28 @@
 
     <p>My skill set separated by different categories</p>
 
-    <div v-for="(skill, index) in skills" :key="index" class="skill-container">
-      <header>
-        <h3 class="skill-tcaption">{{skill.name}}</h3>
-      </header>
-      <table class="skill-table">
-        <thead>
-          <tr>
-            <th class="skill-theader">Name</th>
-            <th class="skill-theader">Tags</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(item, key) in skill.items" :key="key">
-            <td class="skill-tfixed">{{item.name}}</td>
-            <td class="skill-tdata">
-              <div v-for="(tag, key) in item.tags" :key="key" :class="tag +' skill-tag'">{{tag}}</div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="root">
+      <div v-for="(skill, index) in skills" :key="index" class="skill-container">
+        <header>
+          <h3 class="skill-tcaption">{{skill.name}}</h3>
+        </header>
+        <table class="skill-table">
+          <thead>
+            <tr>
+              <th class="skill-theader">Name</th>
+              <th class="skill-theader">Tags</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, key) in skill.items" :key="key">
+              <td class="skill-tfixed">{{item.name}}</td>
+              <td class="skill-tdata">
+                <div v-for="(tag, key) in item.tags" :key="key" :class="tag +' skill-tag'">{{tag}}</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 </template>
@@ -50,9 +52,13 @@ ul li a {
 
 .skill-container {
   background-color: rgb(64, 61, 88);
-  border: radius 16px;
+  border-radius: 16px;
   color: white;
   height: 100pct;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 }
 
 .skill-tcaption {
@@ -60,10 +66,10 @@ ul li a {
   font-weight: bold;
   line-height: 1.25abs;
   letter-spacing: 1px;
-  margin-bottom: 4px;
+  margin-bottom: 16px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 16px;
+  margin-top: 8px;
   text-align: center;
 }
 
@@ -94,7 +100,6 @@ ul li a {
   font-size: 0.8rem;
   line-height: 120pct;
   margin-right: 4px;
-  /* media: ("(max-width: 960px)", [marginBottom(px(4))]), */
   padding: 2px;
 }
 
@@ -112,6 +117,10 @@ ul li a {
 
 .intermediary {
   background-color: rgb(255, 159, 91);
+}
+
+.not-interested {
+  background-color: rgb(222, 222, 222);
 }
 
 .work-experience {
