@@ -5,28 +5,26 @@
 
     <p>My skill set separated by different categories</p>
 
-    <div class="root">
-      <div v-for="(skill, index) in skills" :key="index" class="skill-container">
-        <header>
-          <h3 class="skill-tcaption">{{skill.name}}</h3>
-        </header>
-        <table class="skill-table">
-          <thead>
-            <tr>
-              <th class="skill-theader">Name</th>
-              <th class="skill-theader">Tags</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="(item, key) in skill.items" :key="key">
-              <td class="skill-tfixed">{{item.name}}</td>
-              <td class="skill-tdata">
-                <div v-for="(tag, key) in item.tags" :key="key" :class="tag +' skill-tag'">{{tag}}</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div v-for="(skill, index) in skills" :key="index" class="skill-container">
+      <header>
+        <h3 class="skill-tcaption">{{skill.name}}</h3>
+      </header>
+      <table class="skill-table">
+        <thead>
+          <tr>
+            <th class="skill-theader">Name</th>
+            <th class="skill-theader">Tags</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(item, key) in skill.items" :key="key">
+            <td class="skill-tfixed">{{item.name}}</td>
+            <td class="skill-tdata">
+              <div v-for="(tag, key) in item.tags" :key="key" :class="tag +' skill-tag'">{{tag}}</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 </template>
@@ -59,6 +57,8 @@ ul li a {
   align-items: center;
   justify-content: center;
   padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill-tcaption {
