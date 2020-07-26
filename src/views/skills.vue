@@ -95,7 +95,6 @@ ul li a {
 
 .skill-tag {
   border-radius: 4px;
-  color: rgb(55, 53, 47);
   display: inline-block;
   font-size: 0.8rem;
   line-height: 120pct;
@@ -104,26 +103,26 @@ ul li a {
 }
 
 .beginner {
-  background-color: rgb(249, 255, 163);
+  background-color: #656a00;
 }
 
 .advanced {
-  background-color: rgb(255, 129, 142);
+  background-color: #7f000d;
 }
 
 .interested {
-  background-color: rgb(145, 215, 255);
+  background-color: #004a75;
 }
 
 .intermediary {
-  background-color: rgb(255, 159, 91);
+  background-color: #953e00;
 }
 
 .not-interested {
-  background-color: rgb(222, 222, 222);
+  background-color: #720095;
 }
 
 .work-experience {
-  background-color: rgb(188, 255, 193);
+  background-color: #005b1c;
 }
 </style>
