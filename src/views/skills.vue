@@ -4,6 +4,7 @@
     <h1 class="title-section">Skills</h1>
 
     <p>My skills separated by different categories</p>
+    <p>I'll add others categories yet, back again another day</p>
 
     <div v-for="(skill, index) in skills" :key="index" class="skill-container">
       <header>

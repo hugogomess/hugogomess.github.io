@@ -1,9 +1,11 @@
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
-.fade-enter, .fade-leave-active {
-  opacity: 0
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 
 /* Reset style */
@@ -292,7 +294,12 @@ a:hover {
   margin-bottom: 10px;
   display: inline-block;
 }
-html, body, input, textarea, select, button {
+html,
+body,
+input,
+textarea,
+select,
+button {
   background-color: #181a1b !important;
   border-color: #736b5e !important;
   color: #e8e6e3 !important;
@@ -370,6 +377,71 @@ ul li a {
 ul li a {
   margin: 0 20px 0 0;
   line-height: 30px;
+}
+.skill-container {
+  background-color: rgb(20, 20, 20);
+  border: solid 1px #878683;
+  border-radius: 16px;
+  color: white;
+  height: 100pct;
+  width: 50%;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill-tcaption {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.25abs;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 8px;
+  text-align: center;
+}
+.skill-table {
+  padding: 16px;
+  width: 100pct;
+}
+.skill-theader {
+  display: none;
+}
+.skill-tdata {
+  border-bottom: 1px solid #494847;
+  padding: 2px;
+  width: 52%;
+}
+.skill-tfixed {
+  border-bottom: 1px solid #494847;
+  padding: 2px;
+  width: 212px;
+}
+.skill-tag {
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 120pct;
+  margin-right: 4px;
+  padding: 2px;
+}
+.beginner {
+  background-color: #656a00;
+}
+.advanced {
+  background-color: #7f000d;
+}
+.interested {
+  background-color: #004a75;
+}
+.intermediary {
+  background-color: #953e00;
+}
+.not-interested {
+  background-color: #720095;
+}
+.work-experience {
+  background-color: #005b1c;
 }
 
 
