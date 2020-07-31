@@ -294,6 +294,7 @@ img {
 section {
   margin: auto;
   width: 100%;
+  padding: 50px 0 50px 0;
 }
 
 section.active {
