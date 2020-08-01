@@ -26,9 +26,8 @@
         </tbody>
       </table>
     </div>
-
-    <button @click="previousSkillTable(skillIndex - 1)">Previous</button>
-    <button @click="nextSkillTable(skillIndex + 1)">Next</button>
+    <a @click="previousSkillTable(skillIndex - 1)" class="prev">&#10094;</a>
+    <a @click="nextSkillTable(skillIndex + 1)" class="next">&#10095;</a>
   </section>
 </template>
 
@@ -88,6 +87,39 @@ export default Vue.extend({
 ul li a {
   margin: 0 20px 0 0;
   line-height: 30px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border-bottom: none !important;
+  position: absolute;
+  top: 58%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.prev {
+  left: 10%;
+}
+
+.next {
+  right: 10%;
+}
+
+.prev:hover {
+  left: 9%;
+}
+
+.next:hover {
+  right: 9%;
 }
 
 .skill-container {
