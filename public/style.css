@@ -401,12 +401,6 @@ ul li a {
 .next {
   right: 10%;
 }
-.prev:hover {
-  left: 9%;
-}
-.next:hover {
-  right: 9%;
-}
 .skill-container {
   background-color: #1a1d1e;
   border: solid 1px #878683;

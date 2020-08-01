@@ -7,7 +7,7 @@
 
     <div class="skill-container" id="skill-container">
       <header>
-        <h3 class="skill-tcaption">{{skill.name}}</h3>
+        <h3 class="skill-tcaption">{{ skill.name }}</h3>
       </header>
       <table class="skill-table">
         <thead>
@@ -18,16 +18,36 @@
         </thead>
         <tbody>
           <tr v-for="(item, key) in skill.items" :key="key">
-            <td class="skill-tfixed">{{item.name}}</td>
+            <td class="skill-tfixed">{{ item.name }}</td>
             <td class="skill-tdata">
-              <div v-for="(tag, key) in item.tags" :key="key" :class="tag +' skill-tag'">{{tag}}</div>
+              <div
+                v-for="(tag, key) in item.tags"
+                :key="key"
+                :class="tag + ' skill-tag'"
+              >
+                {{ tag }}
+              </div>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <a @click="previousSkillTable(skillIndex - 1)" class="prev">&#10094;</a>
-    <a @click="nextSkillTable(skillIndex + 1)" class="next">&#10095;</a>
+    <a
+      @click="nextSkillTable(skillIndex + 1)"
+      @mouseover="moveOutArrows()"
+      @mouseout="moveInArrows()"
+      id="next"
+      class="next"
+      >&#10095;</a
+    >
+    <a
+      @click="previousSkillTable(skillIndex - 1)"
+      @mouseover="moveOutArrows()"
+      @mouseout="moveInArrows()"
+      id="prev"
+      class="prev"
+      >&#10094;</a
+    >
   </section>
 </template>
 
@@ -79,6 +99,24 @@ export default Vue.extend({
         element.classList.toggle("skill-hide");
       }
     },
+    moveOutArrows() {
+      let next = document.getElementById("next");
+      let prev = document.getElementById("prev");
+
+      if (next !== null && prev !== null) {
+        next.style.right = "9%";
+        prev.style.left = "9%";
+      }
+    },
+    moveInArrows() {
+      let next = document.getElementById("next");
+      let prev = document.getElementById("prev");
+
+      if (next !== null && prev !== null) {
+        next.style.right = "10%";
+        prev.style.left = "10%";
+      }
+    },
   },
 });
 </script>
@@ -112,14 +150,6 @@ ul li a {
 
 .next {
   right: 10%;
-}
-
-.prev:hover {
-  left: 9%;
-}
-
-.next:hover {
-  right: 9%;
 }
 
 .skill-container {
