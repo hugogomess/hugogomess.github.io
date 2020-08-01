@@ -123,7 +123,7 @@ ul li a {
 }
 
 .skill-container {
-  background-color: rgb(20, 20, 20);
+  background-color: #1a1d1e;
   border: solid 1px #878683;
   border-radius: 16px;
   color: white;
@@ -180,29 +180,30 @@ ul li a {
   line-height: 120pct;
   margin-right: 4px;
   padding: 2px;
+  color: black;
 }
 
 .beginner {
-  background-color: #656a00;
+  background-color: #ffd700;
 }
 
 .advanced {
-  background-color: #7f000d;
+  background-color: #ff0000;
 }
 
 .interested {
-  background-color: #004a75;
+  background-color: #bef992;
 }
 
 .intermediary {
-  background-color: #953e00;
+  background-color: #ff4d00;
 }
 
 .not-interested {
-  background-color: #720095;
+  background-color: #e43f5a;
 }
 
 .work-experience {
-  background-color: #005b1c;
+  background-color: #3282b8;
 }
 </style>
