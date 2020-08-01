@@ -4,9 +4,8 @@
     <h1 class="title-section">Skills</h1>
 
     <p>My skills separated by different categories</p>
-    <p>I'll add others categories yet, back again another day</p>
 
-    <div v-for="(skill, index) in skills" :key="index" class="skill-container">
+    <div class="skill-container" id="skill-container">
       <header>
         <h3 class="skill-tcaption">{{skill.name}}</h3>
       </header>
@@ -27,6 +26,9 @@
         </tbody>
       </table>
     </div>
+
+    <button @click="previousSkillTable(skillIndex - 1)">Previous</button>
+    <button @click="nextSkillTable(skillIndex + 1)">Next</button>
   </section>
 </template>
 
@@ -38,7 +40,46 @@ export default Vue.extend({
   data() {
     return {
       skills,
+      skill: skills[0],
+      skillIndex: 0,
     };
+  },
+  methods: {
+    async nextSkillTable(nextIndex: number) {
+      this.fadeEffect("skill-container");
+      await new Promise((r) => setTimeout(r, 300));
+
+      if (nextIndex >= this.skills.length) {
+        this.skillIndex = 0;
+        this.skill = this.skills[0];
+      } else {
+        this.skillIndex = nextIndex;
+        this.skill = this.skills[nextIndex];
+      }
+
+      this.fadeEffect("skill-container");
+    },
+    async previousSkillTable(previousIndex: number) {
+      this.fadeEffect("skill-container");
+      await new Promise((r) => setTimeout(r, 300));
+
+      if (previousIndex < 0) {
+        this.skillIndex = this.skills.length - 1;
+        this.skill = this.skills[this.skills.length - 1];
+      } else {
+        this.skillIndex = previousIndex;
+        this.skill = this.skills[previousIndex];
+      }
+
+      this.fadeEffect("skill-container");
+    },
+    fadeEffect(elId: string) {
+      let element = document.getElementById(elId);
+
+      if (element !== null) {
+        element.classList.toggle("skill-hide");
+      }
+    },
   },
 });
 </script>
@@ -59,6 +100,12 @@ ul li a {
   padding: 16px;
   margin-left: auto;
   margin-right: auto;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.skill-hide {
+  opacity: 0;
 }
 
 .skill-tcaption {

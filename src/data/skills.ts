@@ -10,6 +10,36 @@ work-experience
 
 export default [
   {
+    name: 'Languages',
+    items: [
+      { name: 'Offensive Security', tags: ['beginner', 'interested'] },
+    ],
+  },
+  {
+    name: 'Back End',
+    items: [
+      { name: 'Offensive Security', tags: ['beginner', 'interested'] },
+      { name: 'Web Hacking', tags: ['beginner', 'interested'] },
+    ],
+  },
+  {
+    name: 'Front End',
+    items: [
+      { name: 'Offensive Security', tags: ['beginner', 'interested'] },
+      { name: 'Web Hacking', tags: ['beginner', 'interested'] },
+      { name: 'Information Gathering', tags: ['beginner', 'interested'] },
+    ],
+  },
+  {
+    name: 'Others',
+    items: [
+      { name: 'Offensive Security', tags: ['beginner', 'interested'] },
+      { name: 'Web Hacking', tags: ['beginner', 'interested'] },
+      { name: 'Information Gathering', tags: ['beginner', 'interested'] },
+      { name: 'Scanning', tags: ['beginner', 'interested'] },
+    ],
+  },
+  {
     name: 'Cyber Security',
     items: [
       { name: 'Offensive Security', tags: ['beginner', 'interested'] },
