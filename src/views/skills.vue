@@ -48,6 +48,16 @@
       class="prev"
       >&#10094;</a
     >
+
+    <div class="dot-div">
+      <span
+        v-for="(dot, key) in skills"
+        :key="key"
+        :class="key == 0 ? 'dot active' : 'dot'"
+        :id="'skill-dot-' + key"
+        @click="setSlideIndex(key, true)"
+      ></span>
+    </div>
   </section>
 </template>
 
@@ -69,9 +79,11 @@ export default Vue.extend({
       await new Promise((r) => setTimeout(r, 300));
 
       if (nextIndex >= this.skills.length) {
+        this.setSlideIndex(0);
         this.skillIndex = 0;
         this.skill = this.skills[0];
       } else {
+        this.setSlideIndex(nextIndex);
         this.skillIndex = nextIndex;
         this.skill = this.skills[nextIndex];
       }
@@ -83,14 +95,17 @@ export default Vue.extend({
       await new Promise((r) => setTimeout(r, 300));
 
       if (previousIndex < 0) {
+        this.setSlideIndex(this.skills.length - 1);
         this.skillIndex = this.skills.length - 1;
         this.skill = this.skills[this.skills.length - 1];
       } else {
+        this.setSlideIndex(previousIndex);
         this.skillIndex = previousIndex;
         this.skill = this.skills[previousIndex];
       }
 
       this.fadeEffect("skill-container");
+      this.setSlideIndex(this.skillIndex);
     },
     fadeEffect(elId: string) {
       let element = document.getElementById(elId);
@@ -115,6 +130,31 @@ export default Vue.extend({
       if (next !== null && prev !== null) {
         next.style.right = "10%";
         prev.style.left = "10%";
+      }
+    },
+    async setSlideIndex(dotIndex: number, isByClick?: boolean) {
+      if (dotIndex !== this.skillIndex) {
+        let currentDot = document.getElementById(
+          "skill-dot-" + this.skillIndex
+        );
+        let dot = document.getElementById("skill-dot-" + dotIndex);
+
+        if (currentDot !== null && dot !== null) {
+          currentDot.classList.remove("active");
+          dot.classList.add("active");
+        }
+
+        if (isByClick) {
+          this.fadeEffect("skill-container");
+          await new Promise((r) => setTimeout(r, 300));
+        }
+
+        this.skillIndex = dotIndex;
+        this.skill = this.skills[dotIndex];
+
+        if (isByClick) {
+          this.fadeEffect("skill-container");
+        }
       }
     },
   },
@@ -150,6 +190,32 @@ ul li a {
 
 .next {
   right: 10%;
+}
+
+.dot-div {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #494847;
 }
 
 .skill-container {
