@@ -379,6 +379,14 @@ ul li a {
   margin: 0 20px 0 0;
   line-height: 30px;
 }
+.skill-back-link {
+  position: absolute;
+  top: 15%;
+}
+.skill-title-section {
+  position: absolute;
+  top: 20%;
+}
 .prev,
 .next {
   cursor: pointer;
@@ -391,7 +399,7 @@ ul li a {
   user-select: none;
   border-bottom: none !important;
   position: absolute;
-  top: 58%;
+  top: 46%;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -400,6 +408,29 @@ ul li a {
 }
 .next {
   right: 10%;
+}
+.dot-div {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 18%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.active,
+.dot:hover {
+  background-color: #494847;
 }
 .skill-container {
   background-color: #1a1d1e;
