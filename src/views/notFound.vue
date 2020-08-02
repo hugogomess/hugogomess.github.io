@@ -2,7 +2,9 @@
   <section class="section text-center">
     <h1>404 Not Found</h1>
     <p>
-      <router-link :to="{ name: 'home'}" id="back-link">Back to the home</router-link>
+      <router-link :to="{ name: 'home' }" id="back-link"
+        >Back to Homepage</router-link
+      >
     </p>
   </section>
 </template>
@@ -13,9 +15,8 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {};
-  }
+  },
 });
 </script>
 
-<style>
-</style>
+<style></style>

@@ -1,9 +1,9 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
-    <h1 class="title-section">Skills</h1>
-
-    <p>My skills separated by different categories</p>
+    <router-link :to="{ name: 'home' }" id="back-link" class="skill-back-link"
+      >Back</router-link
+    >
+    <h1 class="title-section skill-title-section">Skills</h1>
 
     <div class="skill-container" id="skill-container">
       <header>
@@ -167,6 +167,16 @@ ul li a {
   line-height: 30px;
 }
 
+.skill-back-link {
+  position: absolute;
+  top: 15%;
+}
+
+.skill-title-section {
+  position: absolute;
+  top: 20%;
+}
+
 .prev,
 .next {
   cursor: pointer;
@@ -179,7 +189,7 @@ ul li a {
   user-select: none;
   border-bottom: none !important;
   position: absolute;
-  top: 58%;
+  top: 46%;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -198,14 +208,14 @@ ul li a {
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 5%;
+  bottom: 18%;
   text-align: center;
 }
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;

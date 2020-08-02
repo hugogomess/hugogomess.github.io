@@ -1,6 +1,11 @@
 <template>
   <section class="section text-center">
-    <img src="../static/hacker-white.png" class="margin-bottom" width="256" height="auto" />
+    <img
+      src="../static/hacker-white.png"
+      class="margin-bottom"
+      width="256"
+      height="auto"
+    />
 
     <h1 class="title-section">
       Hugo
