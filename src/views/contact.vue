@@ -18,10 +18,6 @@
         }}
       </a>
     </h2>
-
-    <br />
-
-    <h2>Discord: {{ social.discord }}</h2>
   </section>
 </template>
 
