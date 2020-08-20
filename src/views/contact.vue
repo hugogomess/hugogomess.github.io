@@ -6,9 +6,8 @@
     <h2>Social media</h2>
     <p>
       You can find me on
-      <a :href="social.links.twitter" target="_blank">Twitter</a>,
-      <a :href="social.links.github" target="_blank">Github</a> and
-      <a :href="social.links.linkedin" target="_blank">Linkedin</a>.
+      <a :href="social.links.twitter" target="_blank">Twitter</a> and 
+      <a :href="social.links.github" target="_blank">Github</a>.
     </p>
 
     <h2>
