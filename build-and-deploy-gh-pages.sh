@@ -8,7 +8,7 @@ rm -rf fonts;
 mv ./build/* ./;
 mv ./build/fonts ./fonts;
 rm -rf ./build;
-git add . && git commit -m "build for gh-pages" && git push origin master;
+git add . && git commit -m "build for production" && git push origin master;
 git checkout dev;
 
 exit
