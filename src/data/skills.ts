@@ -55,7 +55,7 @@ export default [
       { name: 'Docker', tags: ['beginner', 'interested'] },
       { name: 'Git, Github, Gitlab', tags: ['advanced', 'work-experience'] },
       { name: 'TDD, Unit Tests, Jest', tags: ['intermediary', 'work-experience'] },
-      { name: 'Swagger', tags: ['beginner', 'interested'] },
+      { name: 'Swagger', tags: ['beginner', 'work-experience'] },
       { name: 'Scrum, Agile', tags: ['beginner', 'work-experience'] },
     ],
   },
@@ -63,7 +63,7 @@ export default [
     name: 'Cyber Security',
     items: [
       { name: 'Offensive Security', tags: ['beginner', 'interested'] },
-      { name: 'Web Hacking', tags: ['beginner', 'interested'] },
+      { name: 'Web Hacking', tags: ['intermediary', 'interested'] },
       { name: 'CTF, Bug Bounty', tags: ['beginner', 'interested'] },
       { name: 'Burpsuite, OWASP ZAP', tags: ['beginner', 'interested'] },
       { name: 'Information Gathering', tags: ['beginner', 'interested'] },

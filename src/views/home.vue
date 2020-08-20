@@ -4,10 +4,10 @@
 
     <h1 class="title-section">
       Hugo
-      <a :href="social.links.github" target="_blank">@hugogomess</a>
+      <a :href="social.links.twitter" target="_blank">@0xkaneki</a>
     </h1>
 
-    <p>Backend developer, offensive security enthusiast and ctf player.</p>
+    <p>Backend developer, offensive security enthusiast, bug hunter and ctf player.</p>
 
     <ul>
       <li>
