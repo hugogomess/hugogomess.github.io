@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+// const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
@@ -83,13 +83,13 @@ module.exports = {
     hints: false,
   },
   devtool: "#eval-source-map",
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        sourceMap: true,
-      }),
-    ],
-  },
+  // optimization: {
+  //   minimizer: [
+  //     new UglifyJsPlugin({
+  //       sourceMap: true,
+  //     }),
+  //   ],
+  // },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "style.css",
