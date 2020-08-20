@@ -1,11 +1,6 @@
 <template>
   <section class="section text-center">
-    <img
-      src="../static/hacker-white.png"
-      class="margin-bottom"
-      width="256"
-      height="auto"
-    />
+    <img src="../static/hacker-white.png" class="margin-bottom" width="256" height="auto" />
 
     <h1 class="title-section">
       Hugo
@@ -15,9 +10,6 @@
     <p>Backend developer, offensive security enthusiast and ctf player.</p>
 
     <ul>
-      <li>
-        <router-link :to="{ name: 'projects' }">Projects</router-link>
-      </li>
       <li>
         <router-link :to="{ name: 'skills' }">Skills</router-link>
       </li>
