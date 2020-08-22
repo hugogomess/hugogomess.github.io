@@ -9,13 +9,10 @@
     </p>
 
     <ul>
-      <!-- <li v-for="(item, index) in articles" :key="index">
+      <li v-for="(article, index) in articles" :key="index">
         <h2>
-          <a :href="item.url" target="_blank">{{ item.title }}</a>
+          <a :href="article.url" target="_blank">{{ article.title }}</a>
         </h2>
-      </li>-->
-      <li>
-        <h2>There's no articles yet, back again later...</h2>
       </li>
     </ul>
   </section>
@@ -24,11 +21,13 @@
 <script lang="ts">
 import Vue from "vue";
 import social from "../data/social";
+import articles from "../data/articles";
 
 export default Vue.extend({
   data() {
     return {
       social,
+      articles,
     };
   },
 });
