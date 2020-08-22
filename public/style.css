@@ -361,6 +361,14 @@ ul li a {
 }
 
 
+#hackthebox a {
+  border: none;
+}
+#hackthebox-badge {
+  padding-left: 10px;
+}
+
+
 ul li {
   display: inline-block;
 }
