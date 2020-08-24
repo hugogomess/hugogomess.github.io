@@ -13,8 +13,8 @@ export default [
     name: 'Languages',
     items: [
       { name: 'Python', tags: ['intermediary', 'work-experience'] },
-      { name: 'Javascript', tags: ['advanced', 'work-experience'] },
-      { name: 'Typescript', tags: ['advanced', 'work-experience'] },
+      { name: 'Javascript', tags: ['intermediary', 'work-experience'] },
+      { name: 'Typescript', tags: ['intermediary', 'work-experience'] },
       { name: 'Shell Script', tags: ['intermediary', 'interested'] },
       { name: 'Java', tags: ['beginner', 'work-experience'] },
       { name: 'C', tags: ['beginner', 'not-interested'] },
@@ -28,7 +28,7 @@ export default [
       { name: 'ExpressJS', tags: ['advanced', 'work-experience'] },
       { name: 'NestJS', tags: ['intermediary', 'work-experience'] },
       { name: 'Django, DRF', tags: ['intermediary', 'work-experience'] },
-      { name: 'Flask', tags: ['intermediary', 'interested'] },
+      { name: 'Flask', tags: ['beginner', 'interested'] },
       { name: 'Spring Boot', tags: ['beginner', 'not-interested'] },
       { name: 'Restful APIs, HTTP', tags: ['advanced', 'work-experience'] },
       { name: 'SQL, Relational DBs', tags: ['intermediary', 'work-experience'] },
@@ -50,13 +50,14 @@ export default [
   {
     name: 'Others',
     items: [
-      { name: 'Linux', tags: ['intermediary', 'work-experience'] },
+      { name: 'OS, Linux, Windows', tags: ['intermediary', 'work-experience'] },
       { name: 'AWS, Heroku', tags: ['beginner', 'work-experience'] },
       { name: 'Docker', tags: ['beginner', 'interested'] },
-      { name: 'Git, Github, Gitlab', tags: ['advanced', 'work-experience'] },
-      { name: 'TDD, Unit Tests, Jest', tags: ['intermediary', 'work-experience'] },
+      { name: 'Git, Github', tags: ['intermediary', 'work-experience'] },
+      { name: 'TDD, Unit Tests, Jest', tags: ['beginner', 'work-experience'] },
       { name: 'Swagger', tags: ['beginner', 'work-experience'] },
       { name: 'Scrum, Agile', tags: ['beginner', 'work-experience'] },
+      { name: 'Computer Network', tags: ['beginner', 'interested'] },
     ],
   },
   {
