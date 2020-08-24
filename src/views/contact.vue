@@ -6,15 +6,17 @@
     <h2>Social media</h2>
     <p>
       You can find me on
-      <a :href="social.links.twitter" target="_blank">Twitter</a> and
-      <a :href="social.links.github" target="_blank">Github</a>.
+      <a :href="social.links.github" target="_blank">Github</a> and
+      <a :href="social.links.twitter" target="_blank">Twitter</a>.
     </p>
 
     <h2>
       Email:
-      <a :href="'mailtto:' + social.email" target="_blank">{{
+      <a :href="'mailtto:' + social.email" target="_blank">
+        {{
         social.email
-      }}</a>
+        }}
+      </a>
     </h2>
 
     <h2>Discord: {{ social.discord }}</h2>
