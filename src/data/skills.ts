@@ -65,8 +65,9 @@ export default [
     items: [
       { name: 'Offensive Security', tags: ['beginner', 'interested'] },
       { name: 'Web Hacking', tags: ['intermediary', 'interested'] },
-      { name: 'CTF, Bug Bounty', tags: ['beginner', 'interested'] },
-      { name: 'Burpsuite, OWASP ZAP', tags: ['beginner', 'interested'] },
+      { name: 'CTF', tags: ['intermediary', 'interested'] },
+      { name: 'Bug Bounty', tags: ['beginner', 'interested'] },
+      { name: 'Burpsuite', tags: ['beginner', 'interested'] },
       { name: 'Information Gathering', tags: ['beginner', 'interested'] },
       { name: 'Vulnerability Analysis', tags: ['beginner', 'interested'] },
       { name: 'Exploit Development', tags: ['beginner', 'interested'] },

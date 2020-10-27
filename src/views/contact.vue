@@ -3,35 +3,23 @@
     <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
     <h1 class="title-section">Contact</h1>
 
-    <h2>Social media</h2>
+    <h2>You can find me on:</h2>
+
+    * <a :href="social.links.github" target="_blank">Github</a><br /><br />
+    * <a :href="social.links.twitter" target="_blank">Twitter</a><br /><br />
+    * <a :href="social.links.medium" target="_blank">Medium</a><br /><br />
+    * <a :href="social.links.htb" target="_blank">HackTheBox</a><br /><br />
+    * <a :href="social.links.thm" target="_blank">TryHackMe</a><br /><br />
+
+    <br />
     <p>
-      You can find me on
-      <a :href="social.links.github" target="_blank">Github</a> and
-      <a :href="social.links.twitter" target="_blank">Twitter</a>.
+      If you want to send me a message, send it on twitter or discord ({{
+        social.discord
+      }}).
     </p>
 
-    <h2>
-      Email:
-      <a :href="'mailtto:' + social.email" target="_blank">
-        {{
-        social.email
-        }}
-      </a>
-    </h2>
-
-    <h2>Discord: {{ social.discord }}</h2>
-
-    <br />
-
-    <div id="tryhackme" target="_blank">
-      <h2>TryHackMe</h2>
-      <div id="tryhackme-badge"></div>
-    </div>
-
-    <br />
-
     <div id="hackthebox" target="_blank">
-      <h2>HackTheBox</h2>
+      <h2>HTB</h2>
       <div id="hackthebox-badge"></div>
     </div>
   </section>
@@ -50,13 +38,8 @@ export default Vue.extend({
   },
   mounted() {
     postscribe(
-      "#tryhackme-badge",
-      "<script src=https://tryhackme.com/badge/116953><\/script>"
-    );
-
-    postscribe(
       "#hackthebox-badge",
-      "<script id=kkk src=https://www.hackthebox.eu/badge/323852><\/script>"
+      "<script id=htb src=https://www.hackthebox.eu/badge/323852><\/script>"
     );
   },
 });

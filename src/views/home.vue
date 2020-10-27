@@ -1,12 +1,17 @@
 <template>
   <section class="section text-center">
-    <img src="../static/hacker-white.png" class="margin-bottom" width="256" height="auto" />
+    <img
+      src="../static/shuriken-white.png"
+      class="margin-bottom"
+      width="100"
+      height="auto"
+    />
 
     <h1 class="title-section">
       <a :href="social.links.twitter" target="_blank">@0xkaneki</a>
     </h1>
 
-    <p>Backend developer, offensive security enthusiast, bug hunter and ctf player.</p>
+    <p>Backend developer, security researcher, bug hunter and ctf player.</p>
 
     <ul>
       <li>
