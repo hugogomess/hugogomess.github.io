@@ -11,7 +11,7 @@
       <a :href="social.links.twitter" target="_blank">@0xkaneki</a>
     </h1>
 
-    <p>Backend developer, security researcher, bug hunter and ctf player.</p>
+    <p>Backend developer, security researcher and ctf player.</p>
 
     <ul>
       <li>
