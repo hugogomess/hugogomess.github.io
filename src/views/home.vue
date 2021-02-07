@@ -8,7 +8,7 @@
     />
 
     <h1 class="title-section">
-      <a :href="social.links.twitter" target="_blank">@0xkaneki</a>
+      <a :href="social.links.twitter" target="_blank">@suken</a>
     </h1>
 
     <p>Backend developer, cyber security student and ctf player.</p>

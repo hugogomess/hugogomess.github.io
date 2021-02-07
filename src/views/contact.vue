@@ -12,12 +12,6 @@
     * <a :href="social.links.thm" target="_blank">TryHackMe</a><br /><br />
 
     <br />
-    <p>
-      If you want to send me a message, send it on twitter or discord ({{
-        social.discord
-      }}).
-    </p>
-
     <div id="hackthebox" target="_blank">
       <h2>HTB</h2>
       <div id="hackthebox-badge"></div>
