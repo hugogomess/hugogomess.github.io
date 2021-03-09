@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
-    <h1 class="title-section">Articles</h1>
+    <h1 class="title-section">Write-ups</h1>
 
     <p>
       You can follow my stories on
@@ -9,9 +9,9 @@
     </p>
 
     <ul>
-      <li v-for="(article, index) in articles" :key="index">
+      <li v-for="(writeup, index) in writeups" :key="index">
         <h2>
-          <a :href="article.url" target="_blank">{{ article.title }}</a>
+          <a :href="writeup.url" target="_blank">{{ writeup.title }}</a>
         </h2>
       </li>
     </ul>
@@ -21,13 +21,13 @@
 <script lang="ts">
 import Vue from "vue";
 import social from "../data/social";
-import articles from "../data/articles";
+import writeups from "../data/writeups";
 
 export default Vue.extend({
   data() {
     return {
       social,
-      articles,
+      writeups,
     };
   },
 });

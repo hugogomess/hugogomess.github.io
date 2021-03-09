@@ -5,20 +5,24 @@
       class="margin-bottom"
       width="100"
       height="auto"
+      align="center"
     />
 
     <h1 class="title-section">
       <a :href="social.links.twitter" target="_blank">@sukenn</a>
     </h1>
 
-    <p>Backend developer, cyber security student and ctf player.</p>
+    <p>Backend developer and ctf player trying to work with cyber security and red team.</p>
 
-    <ul>
-      <li>
+    <ul align="center">
+      <!-- <li>
         <router-link :to="{ name: 'skills' }">Skills</router-link>
+      </li> -->
+      <li>
+        <router-link :to="{ name: 'write-ups' }">Write-ups</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'articles' }">Articles</router-link>
+        <a :href="social.links.htb" target="_blank">HackTheBox</a>
       </li>
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
@@ -46,6 +50,11 @@ ul li {
 }
 
 ul li a {
-  margin: 0 20px;
+  margin: 0 5px;
 }
+
+ul {
+  padding-right: 20px;
+}
+
 </style>

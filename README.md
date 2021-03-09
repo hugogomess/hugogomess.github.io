@@ -1,1 +1,3 @@
-# [0xkaneki.com](https://0xkaneki.com)
+# sukenn's website
+
+[sukenn.github.io](https://sukenn.github.io/)
