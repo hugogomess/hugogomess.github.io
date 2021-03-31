@@ -9,7 +9,7 @@
     />
 
     <h1 class="title-section">
-      <a :href="social.links.twitter" target="_blank">@sukenn</a>
+      <a :href="social.links.github" target="_blank">@sukenn</a>
     </h1>
 
     <p>Backend developer and ctf player trying to work with cyber security and red team.</p>
