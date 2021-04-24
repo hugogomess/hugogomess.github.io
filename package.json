@@ -1,5 +1,5 @@
 {
-  "name": "hugogomess.github.io",
+  "name": "sukenn.github.io",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -15,7 +15,7 @@
   "keywords": [],
   "author": {
     "name": "Hugo",
-    "url": "https://github.com/hugogomess"
+    "url": "https://github.com/sukenn"
   },
   "license": "MIT",
   "dependencies": {

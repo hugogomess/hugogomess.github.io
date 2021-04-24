@@ -6,8 +6,9 @@
     <h2>You can find me on:</h2>
 
     * <a :href="social.links.github" target="_blank">Github</a><br /><br />
-    * <a :href="social.links.twitter" target="_blank">Twitter</a><br /><br />
     * <a :href="social.links.medium" target="_blank">Medium</a><br /><br />
+    * <a :href="social.links.twitter" target="_blank">Twitter</a><br /><br />
+    * <a :href="social.links.telegram" target="_blank">Telegram</a><br /><br />
     * <a :href="social.links.htb" target="_blank">HackTheBox</a><br /><br />
     * <a :href="social.links.thm" target="_blank">TryHackMe</a><br /><br />
 
