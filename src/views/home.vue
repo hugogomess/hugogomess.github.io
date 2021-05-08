@@ -1,7 +1,7 @@
 <template>
   <section class="section text-center">
     <img
-      src="../static/shuriken-white.png"
+      src="../static/profile.jpg"
       class="margin-bottom"
       width="100"
       height="auto"
@@ -55,6 +55,10 @@ ul li a {
 
 ul {
   padding-right: 20px;
+}
+
+.title-section {
+  margin-top: -20px;
 }
 
 </style>
