@@ -27,9 +27,9 @@ export default Vue.extend({
   data() {
     return {
       social,
-      writeups,
+      writeups
     };
-  },
+  }
 });
 </script>
 

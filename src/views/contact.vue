@@ -28,15 +28,16 @@ import social from "../data/social";
 export default Vue.extend({
   data() {
     return {
-      social,
+      social
     };
   },
   mounted() {
     postscribe(
       "#hackthebox-badge",
+      // eslint-disable-next-line no-useless-escape
       "<script id=htb src=https://www.hackthebox.eu/badge/323852><\/script>"
     );
-  },
+  }
 });
 </script>
 

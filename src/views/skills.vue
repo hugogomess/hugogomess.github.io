@@ -70,13 +70,13 @@ export default Vue.extend({
     return {
       skills,
       skill: skills[0],
-      skillIndex: 0,
+      skillIndex: 0
     };
   },
   methods: {
     async nextSkillTable(nextIndex: number) {
       this.fadeEffect("skill-container");
-      await new Promise((r) => setTimeout(r, 300));
+      await new Promise(r => setTimeout(r, 300));
 
       if (nextIndex >= this.skills.length) {
         this.setSlideIndex(0);
@@ -92,7 +92,7 @@ export default Vue.extend({
     },
     async previousSkillTable(previousIndex: number) {
       this.fadeEffect("skill-container");
-      await new Promise((r) => setTimeout(r, 300));
+      await new Promise(r => setTimeout(r, 300));
 
       if (previousIndex < 0) {
         this.setSlideIndex(this.skills.length - 1);
@@ -108,15 +108,15 @@ export default Vue.extend({
       this.setSlideIndex(this.skillIndex);
     },
     fadeEffect(elId: string) {
-      let element = document.getElementById(elId);
+      const element = document.getElementById(elId);
 
       if (element !== null) {
         element.classList.toggle("skill-hide");
       }
     },
     moveOutArrows() {
-      let next = document.getElementById("next");
-      let prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      const prev = document.getElementById("prev");
 
       if (next !== null && prev !== null) {
         next.style.right = "9%";
@@ -124,8 +124,8 @@ export default Vue.extend({
       }
     },
     moveInArrows() {
-      let next = document.getElementById("next");
-      let prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      const prev = document.getElementById("prev");
 
       if (next !== null && prev !== null) {
         next.style.right = "10%";
@@ -134,10 +134,10 @@ export default Vue.extend({
     },
     async setSlideIndex(dotIndex: number, isByClick?: boolean) {
       if (dotIndex !== this.skillIndex) {
-        let currentDot = document.getElementById(
+        const currentDot = document.getElementById(
           "skill-dot-" + this.skillIndex
         );
-        let dot = document.getElementById("skill-dot-" + dotIndex);
+        const dot = document.getElementById("skill-dot-" + dotIndex);
 
         if (currentDot !== null && dot !== null) {
           currentDot.classList.remove("active");
@@ -146,7 +146,7 @@ export default Vue.extend({
 
         if (isByClick) {
           this.fadeEffect("skill-container");
-          await new Promise((r) => setTimeout(r, 300));
+          await new Promise(r => setTimeout(r, 300));
         }
 
         this.skillIndex = dotIndex;
@@ -156,8 +156,8 @@ export default Vue.extend({
           this.fadeEffect("skill-container");
         }
       }
-    },
-  },
+    }
+  }
 });
 </script>
 

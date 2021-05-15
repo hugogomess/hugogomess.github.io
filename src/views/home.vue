@@ -12,7 +12,10 @@
       <a :href="social.links.twitter" target="_blank">@sukenn</a>
     </h1>
 
-    <p>Backend developer and ctf player trying to work with cyber security and red team.</p>
+    <p>
+      Backend developer and ctf player trying to work with cyber security and
+      red team.
+    </p>
 
     <ul align="center">
       <!-- <li>
@@ -38,9 +41,9 @@ import social from "../data/social";
 export default Vue.extend({
   data() {
     return {
-      social,
+      social
     };
-  },
+  }
 });
 </script>
 
@@ -60,5 +63,4 @@ ul {
 .title-section {
   margin-top: -20px;
 }
-
 </style>
