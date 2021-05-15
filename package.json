@@ -1,41 +1,36 @@
 {
-  "name": "sukenn.github.io",
+  "name": "@sukenn/website",
+  "description": "Created with Vue CLI 3",
   "version": "1.0.0",
   "private": true,
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --hot --watch --config webpack.config.js",
-    "start": "npm run build && npm run lint && npm run test",
-    "build": "NODE_ENV=production webpack",
-    "build:watch": "NODE_ENV=development webpack --watch",
-    "lint": "tslint --project .",
-    "test": "echo \"no test specified\" && exit 0"
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint --no-fix",
+    "lint:fix": "vue-cli-service lint",
+    "test:e2e": "exit 0"
   },
-  "keywords": [],
-  "author": {
-    "name": "Hugo",
-    "url": "https://github.com/sukenn"
-  },
-  "license": "MIT",
   "dependencies": {
+    "core-js": "3.6.4",
     "postscribe": "^2.0.8",
-    "vue": "^2.6.10",
-    "vue-class-component": "^7.1.0",
-    "vue-router": "^3.0.6"
+    "vue": "2.6.11",
+    "vue-router": "3.4.6"
   },
   "devDependencies": {
-    "css-loader": "^3.0.0",
-    "file-loader": "^4.0.0",
-    "husky": "^3.0.0",
-    "mini-css-extract-plugin": "^0.7.0",
-    "ts-loader": "^6.0.4",
-    "tslint": "^5.18.0",
-    "typescript": "^3.5.2",
-    "vue-loader": "^15.7.0",
-    "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.11.0"
-  }
+    "@typescript-eslint/eslint-plugin": "2.18.0",
+    "@typescript-eslint/parser": "2.18.0",
+    "@vue/cli-plugin-babel": "4.2.0",
+    "@vue/cli-plugin-eslint": "4.2.0",
+    "@vue/cli-plugin-typescript": "4.2.0",
+    "@vue/cli-service": "4.2.0",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "5.0.1",
+    "eslint": "6.7.2",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-vue": "6.1.2",
+    "prettier": "1.19.1",
+    "typescript": "3.7.5",
+    "vue-template-compiler": "2.6.11"
+  },
+  "keywords": []
 }
