@@ -5,48 +5,30 @@
 
     <h2>You can find me on:</h2>
 
-    * <a :href="social.links.github" target="_blank">Github</a><br /><br />
-    * <a :href="social.links.medium" target="_blank">Medium</a><br /><br />
-    * <a :href="social.links.twitter" target="_blank">Twitter</a><br /><br />
-    * <a :href="social.links.telegram" target="_blank">Telegram</a><br /><br />
-    * <a :href="social.links.htb" target="_blank">HackTheBox</a><br /><br />
-    * <a :href="social.links.thm" target="_blank">TryHackMe</a><br /><br />
+    ⁃ <a :href="contact.links.htb" target="_blank">HackTheBox</a><br /><br />
+    ⁃ <a :href="contact.links.github" target="_blank">Github</a><br /><br />
+    ⁃ <a :href="contact.links.twitter" target="_blank">Twitter</a><br /><br />
+    ⁃ <a :href="contact.links.telegram" target="_blank">Telegram</a><br /><br />
+    ⁃ <a :href="contact.links.thm" target="_blank">TryHackMe</a
+    ><br /><br /><br />
 
-    <br />
-    <div id="hackthebox" target="_blank">
-      <h2>HTB</h2>
-      <div id="hackthebox-badge"></div>
-    </div>
+    <h2>Email:</h2>
+    <p>
+      {{ contact.email }} --
+      <a href="./publickey.asc">PGP PUBLIC KEY</a>
+    </p>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import postscribe from "postscribe";
-import social from "../data/social";
+import contact from "../data/contact";
 
 export default Vue.extend({
   data() {
     return {
-      social
+      contact
     };
-  },
-  mounted() {
-    postscribe(
-      "#hackthebox-badge",
-      // eslint-disable-next-line no-useless-escape
-      "<script id=htb src=https://www.hackthebox.eu/badge/323852><\/script>"
-    );
   }
 });
 </script>
-
-<style>
-#hackthebox a {
-  border: none;
-}
-
-#hackthebox-badge {
-  padding-left: 10px;
-}
-</style>

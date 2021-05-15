@@ -3,46 +3,54 @@
     <img
       src="../static/profile.jpg"
       class="margin-bottom"
-      width="100"
+      width="150"
       height="auto"
-      align="center"
+      alt
     />
 
     <h1 class="title-section">
-      <a :href="social.links.twitter" target="_blank">@sukenn</a>
+      Hugo
+      <a :href="contact.links.twitter" target="_blank">@sukenn</a>
     </h1>
 
-    <p>
-      Backend developer and ctf player trying to work with cyber security and
-      red team.
-    </p>
+    <p>Backend developer, cyber security student and ctf player...</p>
 
-    <ul align="center">
-      <!-- <li>
-        <router-link :to="{ name: 'skills' }">Skills</router-link>
-      </li> -->
+    <ul>
       <li>
-        <router-link :to="{ name: 'write-ups' }">Write-ups</router-link>
+        <router-link :to="{ name: 'blog' }">Blog</router-link>
       </li>
       <li>
-        <a :href="social.links.htb" target="_blank">HackTheBox</a>
+        <a :href="contact.links.htb" target="_blank">HackTheBox</a>
+      </li>
+      <li>
+        <router-link :to="{ name: 'contact' }">About me</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>
     </ul>
+
+    <div id="hackthebox-badge" align="center"></div>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import social from "../data/social";
+import postscribe from "postscribe";
+import contact from "../data/contact";
 
 export default Vue.extend({
   data() {
     return {
-      social
+      contact
     };
+  },
+  mounted() {
+    postscribe(
+      "#hackthebox-badge",
+      // eslint-disable-next-line no-useless-escape
+      "<script id=htb src=https://www.hackthebox.eu/badge/323852><\/script>"
+    );
   }
 });
 </script>
@@ -53,14 +61,14 @@ ul li {
 }
 
 ul li a {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
-ul {
-  padding-right: 20px;
+#hackthebox-badge {
+  margin-top: 40px;
 }
 
-.title-section {
-  margin-top: -20px;
+#hackthebox-badge a {
+  border: none;
 }
 </style>
