@@ -2,6 +2,12 @@
 
 [sukenn.xyz](https://sukenn.xyz/)
 
+<div align="left">
+  <a href="https://github.com/sukenn/sukenn.github.io/actions">
+    <img src="https://img.shields.io/endpoint.svg?url=https://actions-badge.atrox.dev/sukenn/sukenn.github.io/badge?ref=master" alt="build status" />
+  </a>
+</div>
+
 ## Stack
 
 Vue 3.x + Typescript
