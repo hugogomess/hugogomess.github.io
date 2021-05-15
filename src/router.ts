@@ -7,7 +7,7 @@ import Contact from "./views/contact.vue";
 import Home from "./views/home.vue";
 import NotFound from "./views/notFound.vue";
 
-// Articles urls
+// Blog posts urls
 import posts from "./data/blog-posts";
 
 Vue.use(VueRouter);
@@ -21,7 +21,7 @@ const routes: any = [
   { path: "/notfound", name: "not_found", component: NotFound }
 ];
 
-// Articles url redirect
+// Blog url redirect
 posts.forEach(post => {
   routes.push({
     path: post.url,
