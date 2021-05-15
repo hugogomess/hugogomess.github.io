@@ -1,3 +1,3 @@
 # sukenn's website
 
-[sukenn.github.io](https://sukenn.github.io/)
+[sukenn.xyz](https://sukenn.xyz/)
