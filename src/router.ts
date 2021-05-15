@@ -1,36 +1,39 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from "vue";
+import VueRouter from "vue-router";
 
 // Views
-import Writeups from './views/writeups.vue';
-import Contact from './views/contact.vue';
-import Home from './views/home.vue';
-import NotFound from './views/notFound.vue';
-import Skills from './views/skills.vue';
+import Blog from "./views/blog.vue";
+import Contact from "./views/contact.vue";
+import Home from "./views/home.vue";
+import NotFound from "./views/notFound.vue";
 
 // Articles urls
-import articles from './data/writeups';
+import posts from "./data/blog-posts";
 
 Vue.use(VueRouter);
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const routes: any = [
-  { path: '/', name: 'home', component: Home },
-  { path: '/write-ups', name: 'write-ups', component: Writeups },
-  // { path: '/skills', name: 'skills', component: Skills },
-  { path: '/skills', redirect: '/' },
-  { path: '/contact', name: 'contact', component: Contact },
-  { path: '/notfound', name: 'not_found', component: NotFound },
-  { path: '*', redirect: '/notfound' },
+  { path: "/", name: "home", component: Home },
+  { path: "/blog", name: "blog", component: Blog },
+  { path: "/contact", name: "contact", component: Contact },
+  //{ path: "/about-me", name: "about-me", component: AboutMe },
+  { path: "/notfound", name: "not_found", component: NotFound }
 ];
 
 // Articles url redirect
-articles.forEach(article => {
-  const articleRoute = {
-    path: article.url,
-    beforeEnter() { location.href = article.redirectTo; },
-  };
-
-  routes.push(articleRoute);
+posts.forEach(post => {
+  routes.push({
+    path: post.url,
+    beforeEnter() {
+      location.href = post.redirectTo;
+    }
+  });
 });
 
-export default new VueRouter({ mode: 'history', routes });
+routes.push({
+  path: "/*",
+  redirect: "/notfound"
+});
+
+export default new VueRouter({ mode: "history", routes });

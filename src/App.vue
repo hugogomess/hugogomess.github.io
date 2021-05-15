@@ -12,12 +12,29 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {};
-  },
+  }
 });
 </script>
 
-
 <style>
+#bottom-note {
+  right: 0;
+  position: fixed;
+  top: 0;
+  width: 149px;
+}
+
+#bottom-note img {
+  width: 100%;
+  height: auto;
+}
+
+#bottom-note a {
+  width: 100%;
+  height: auto;
+  border-bottom: none;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
@@ -289,12 +306,15 @@ img {
   .container.main-content .section {
     width: 100%;
   }
+  #bottom-note {
+    width: 100px;
+  }
 }
 
 section {
   margin: auto;
   width: 100%;
-  padding: 50px 0 50px 0;
+  padding: 80px 0 80px 0;
 }
 
 section.active {
@@ -312,6 +332,18 @@ section h2 {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
+  background: #ffffff;
+  color: #000000;
+  padding: 5px;
+  width: max-content;
+}
+
+section h3,
+section ul.list li {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
 }
 
 section p {
@@ -334,7 +366,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid #494847;
+  border-bottom: 2px solid #41403f;
 }
 
 #back-link {

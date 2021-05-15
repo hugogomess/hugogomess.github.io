@@ -1,1 +1,1 @@
-declare module 'postscribe';
+declare module "postscribe";
