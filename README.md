@@ -36,6 +36,6 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
+### Thanks
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This project was forked from [github.com/sundowndev/website](https://github.com/sundowndev/website) and modified for me.
