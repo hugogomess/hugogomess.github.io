@@ -29,14 +29,11 @@
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>
     </ul>
-
-    <div id="hackthebox-badge" align="center"></div>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import postscribe from "postscribe";
 import contact from "../data/contact";
 
 export default Vue.extend({
@@ -44,13 +41,6 @@ export default Vue.extend({
     return {
       contact
     };
-  },
-  mounted() {
-    postscribe(
-      "#hackthebox-badge",
-      // eslint-disable-next-line no-useless-escape
-      "<script id=htb src=https://www.hackthebox.eu/badge/323852><\/script>"
-    );
   }
 });
 </script>
