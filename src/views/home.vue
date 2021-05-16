@@ -17,13 +17,13 @@
 
     <ul>
       <li>
+        <router-link :to="{ name: 'about-me' }">About me</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'tools' }">Tools</router-link>
+      </li>
+      <li>
         <router-link :to="{ name: 'blog' }">Blog</router-link>
-      </li>
-      <li>
-        <a :href="contact.links.htb" target="_blank">HackTheBox</a>
-      </li>
-      <li>
-        <router-link :to="{ name: 'contact' }">About me</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>

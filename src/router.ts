@@ -6,6 +6,7 @@ import Blog from "./views/blog.vue";
 import Contact from "./views/contact.vue";
 import Home from "./views/home.vue";
 import AboutMe from "./views/about-me.vue";
+import Tools from "./views/tools.vue";
 import NotFound from "./views/not-found.vue";
 
 // Blog posts urls
@@ -19,6 +20,7 @@ const routes: any = [
   { path: "/blog", name: "blog", component: Blog },
   { path: "/contact", name: "contact", component: Contact },
   { path: "/about-me", name: "about-me", component: AboutMe },
+  { path: "/tools", name: "tools", component: Tools },
   { path: "/404", name: "not-found", component: NotFound }
 ];
 

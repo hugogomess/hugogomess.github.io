@@ -1,22 +1,16 @@
 <template>
   <section class="section">
     <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
-    <h1 class="title-section">Blog</h1>
+    <h1 class="title-section">Tools</h1>
 
     <h2>
-      You can follow my stories on
-      <a :href="contact.links.medium" target="_blank">Medium</a>.
+      You can find my open source tools on
+      <a :href="contact.links.github" target="_blank">Github</a>.
     </h2>
 
     <ul class="list">
-      <li v-for="(item, index) in posts" :key="index">
-        <a :href="item.url" target="_blank" class="post">{{ item.title }}</a> -
-        <span
-          v-for="(tag, tagIndex) in item.tags"
-          :key="tagIndex"
-          class="tag"
-          >{{ tag }}</span
-        >
+      <li v-for="(tool, index) in tools" :key="index">
+        <a :href="tool.url" target="_blank" class="post">{{ tool.title }}</a>
       </li>
     </ul>
   </section>
@@ -25,13 +19,13 @@
 <script lang="ts">
 import Vue from "vue";
 import contact from "../data/contact";
-import posts from "../data/blog-posts";
+import tools from "../data/tools";
 
 export default Vue.extend({
   data() {
     return {
       contact,
-      posts
+      tools
     };
   }
 });
@@ -41,16 +35,6 @@ export default Vue.extend({
 ul li a {
   /* margin: 0 20px 0 0; */
   line-height: 30px;
-}
-
-.tag {
-  padding: 3px;
-  margin: 4px;
-  width: max-content;
-}
-
-.post {
-  margin-right: 0;
 }
 
 h2 a {
