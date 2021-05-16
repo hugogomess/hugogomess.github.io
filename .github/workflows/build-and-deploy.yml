@@ -25,7 +25,7 @@ jobs:
         run: yarn build
 
       - name: Generate 404 page
-        run: cp index.html 404.html
+        run: cp dist/index.html dist/404.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.3
