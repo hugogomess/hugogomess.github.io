@@ -9,7 +9,7 @@ import AboutMe from "./views/about-me.vue";
 import Tools from "./views/tools.vue";
 import NotFound from "./views/not-found.vue";
 
-// Blog posts urls
+// Blog posts
 import posts from "./data/blog-posts";
 
 Vue.use(VueRouter);
