@@ -8,8 +8,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint --no-fix",
     "lint:fix": "vue-cli-service lint",
-    "test:e2e": "exit 0",
-    "prepare": "husky install"
+    "test:e2e": "exit 0"
   },
   "dependencies": {
     "core-js": "3.6.4",
