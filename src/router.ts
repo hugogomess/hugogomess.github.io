@@ -5,7 +5,8 @@ import VueRouter from "vue-router";
 import Blog from "./views/blog.vue";
 import Contact from "./views/contact.vue";
 import Home from "./views/home.vue";
-import NotFound from "./views/notFound.vue";
+import AboutMe from "./views/about-me.vue";
+import NotFound from "./views/not-found.vue";
 
 // Blog posts urls
 import posts from "./data/blog-posts";
@@ -17,11 +18,11 @@ const routes: any = [
   { path: "/", name: "home", component: Home },
   { path: "/blog", name: "blog", component: Blog },
   { path: "/contact", name: "contact", component: Contact },
-  //{ path: "/about-me", name: "about-me", component: AboutMe },
-  { path: "/notfound", name: "not_found", component: NotFound }
+  { path: "/about-me", name: "about-me", component: AboutMe },
+  { path: "/404", name: "not-found", component: NotFound }
 ];
 
-// Blog url redirect
+// Blog urls redirect
 posts.forEach(post => {
   routes.push({
     path: post.url,
@@ -31,9 +32,6 @@ posts.forEach(post => {
   });
 });
 
-routes.push({
-  path: "/*",
-  redirect: "/notfound"
-});
+routes.push({ path: "/*", redirect: "/404" });
 
 export default new VueRouter({ mode: "history", routes });
