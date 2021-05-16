@@ -36,6 +36,6 @@ yarn build
 yarn lint
 ```
 
-### Thanks
+### Source
 
 This project was forked from [github.com/sundowndev/website](https://github.com/sundowndev/website) and modified for me.
