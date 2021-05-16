@@ -4,25 +4,25 @@
       <router-view />
     </transition>
 
-    <!-- <div id="hackthebox-badge" align="center"></div> -->
+    <div id="hackthebox-badge" align="center"></div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-// import postscribe from "postscribe";
+import postscribe from "postscribe";
 
 export default Vue.extend({
   data() {
     return {};
+  },
+  mounted() {
+    postscribe(
+      "#hackthebox-badge",
+      // eslint-disable-next-line no-useless-escape
+      "<script id=htb src=https://www.hackthebox.eu/badge/323852><\/script>"
+    );
   }
-  // mounted() {
-  //   postscribe(
-  //     "#hackthebox-badge",
-  //     // eslint-disable-next-line no-useless-escape
-  //     "<script id=htb src=https://www.hackthebox.eu/badge/323852><\/script>"
-  //   );
-  // }
 });
 </script>
 
