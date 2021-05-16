@@ -4,17 +4,19 @@
     <h1 class="title-section">Contact</h1>
 
     <h2>You can find me on:</h2>
-
-    ⁃ <a :href="contact.links.htb" target="_blank">HackTheBox</a><br /><br />
-    ⁃ <a :href="contact.links.github" target="_blank">Github</a><br /><br />
-    ⁃ <a :href="contact.links.twitter" target="_blank">Twitter</a><br /><br />
-    ⁃ <a :href="contact.links.telegram" target="_blank">Telegram</a><br /><br />
-    ⁃ <a :href="contact.links.thm" target="_blank">TryHackMe</a
-    ><br /><br /><br />
+    <div class="contact-block">
+      ⁃ <a :href="contact.links.htb" target="_blank">HackTheBox</a><br /><br />
+      ⁃ <a :href="contact.links.github" target="_blank">Github</a><br /><br />
+      ⁃ <a :href="contact.links.twitter" target="_blank">Twitter</a><br /><br />
+      ⁃ <a :href="contact.links.telegram" target="_blank">Telegram</a
+      ><br /><br />
+      ⁃ <a :href="contact.links.thm" target="_blank">TryHackMe</a
+      ><br /><br /><br />
+    </div>
 
     <h2>Email:</h2>
-    <p>
-      {{ contact.email }} --
+    <p class="contact-block">
+      &lt;{{ contact.email }}&gt; --
       <a href="./publickey.asc">PGP PUBLIC KEY</a>
     </p>
   </section>
@@ -32,3 +34,9 @@ export default Vue.extend({
   }
 });
 </script>
+<style>
+.contact-block {
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+</style>

@@ -3,16 +3,19 @@
     <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
     <h1 class="title-section">Tools</h1>
 
-    <h2>
+    <p>
       You can find my open source tools on
       <a :href="contact.links.github" target="_blank">Github</a>.
-    </h2>
+    </p>
 
-    <ul class="list">
-      <li v-for="(tool, index) in tools" :key="index">
-        <a :href="tool.url" target="_blank" class="post">{{ tool.title }}</a>
-      </li>
-    </ul>
+    <div v-for="(category, index) in tools" :key="index" class="category">
+      <h2>{{ category.title }}</h2>
+      <ul class="list">
+        <li v-for="(tool, tIndex) in category.tools" :key="tIndex">
+          <a :href="tool.url" target="_blank" class="post">{{ tool.title }}</a>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
@@ -33,17 +36,11 @@ export default Vue.extend({
 
 <style>
 ul li a {
-  /* margin: 0 20px 0 0; */
+  margin: 0 20px 0 0;
   line-height: 30px;
 }
 
-h2 a {
-  color: #000 !important;
-  border-bottom: 2px solid #000 !important;
-}
-
-h2 a:hover {
-  border-bottom: 2px solid #555555 !important;
-  color: #555555 !important;
+.category {
+  padding-bottom: 20px;
 }
 </style>

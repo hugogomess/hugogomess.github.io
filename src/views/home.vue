@@ -15,7 +15,7 @@
 
     <p>Backend developer, cyber security student and ctf player...</p>
 
-    <ul>
+    <ul class="links">
       <li>
         <router-link :to="{ name: 'about-me' }">About me</router-link>
       </li>
@@ -60,7 +60,7 @@ ul li {
   display: inline-block;
 }
 
-ul li a {
+.links a {
   margin: 0 10px;
 }
 

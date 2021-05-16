@@ -3,20 +3,15 @@
     <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
     <h1 class="title-section">Blog</h1>
 
-    <h2>
+    <p>
       You can follow my stories on
       <a :href="contact.links.medium" target="_blank">Medium</a>.
-    </h2>
+    </p>
 
+    <h2>Writeups</h2>
     <ul class="list">
       <li v-for="(item, index) in posts" :key="index">
-        <a :href="item.url" target="_blank" class="post">{{ item.title }}</a> -
-        <span
-          v-for="(tag, tagIndex) in item.tags"
-          :key="tagIndex"
-          class="tag"
-          >{{ tag }}</span
-        >
+        <a :href="item.url" target="_blank" class="post">{{ item.title }}</a>
       </li>
     </ul>
   </section>
@@ -39,27 +34,7 @@ export default Vue.extend({
 
 <style>
 ul li a {
-  /* margin: 0 20px 0 0; */
+  margin: 0 20px 0 0;
   line-height: 30px;
-}
-
-.tag {
-  padding: 3px;
-  margin: 4px;
-  width: max-content;
-}
-
-.post {
-  margin-right: 0;
-}
-
-h2 a {
-  color: #000 !important;
-  border-bottom: 2px solid #000 !important;
-}
-
-h2 a:hover {
-  border-bottom: 2px solid #555555 !important;
-  color: #555555 !important;
 }
 </style>
