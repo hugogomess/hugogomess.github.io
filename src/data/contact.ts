@@ -6,6 +6,6 @@ export default {
     github: "https://github.com/sukenn",
     telegram: "https://t.me/sukennzx",
     thm: "https://tryhackme.com/p/sukenn",
-    medium: "https://medium.com/@sukennzx"
+    blog: "https://blog.sukenn.xyz"
   }
 };

@@ -23,7 +23,7 @@
         <router-link :to="{ name: 'tools' }">Tools</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'blog' }">Blog</router-link>
+        <a :href="contact.links.blog" target="_blank">Blog</a>
       </li>
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
