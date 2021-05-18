@@ -5,7 +5,6 @@ export default {
     twitter: "https://twitter.com/sukennzx",
     github: "https://github.com/sukenn",
     telegram: "https://t.me/sukennzx",
-    thm: "https://tryhackme.com/p/sukenn",
     blog: "https://blog.sukenn.xyz"
   }
 };

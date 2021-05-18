@@ -5,14 +5,14 @@
 
     <h2>You can find me on:</h2>
     <div class="contact-block">
-      ⁃ <a :href="contact.links.htb" target="_blank">HackTheBox</a><br /><br />
-      ⁃ <a :href="contact.links.github" target="_blank">Github</a><br /><br />
-      ⁃ <a :href="contact.links.twitter" target="_blank">Twitter</a><br /><br />
-      ⁃ <a :href="contact.links.telegram" target="_blank">Telegram</a
+      * <a :href="contact.links.htb" target="_blank">HackTheBox</a><br /><br />
+      * <a :href="contact.links.github" target="_blank">Github</a><br /><br />
+      * <a :href="contact.links.twitter" target="_blank">Twitter</a><br /><br />
+      * <a :href="contact.links.telegram" target="_blank">Telegram</a
       ><br /><br />
-      ⁃ <a :href="contact.links.thm" target="_blank">TryHackMe</a
-      ><br /><br /><br />
     </div>
+
+    <br />
 
     <h2>Email:</h2>
     <p class="contact-block">
