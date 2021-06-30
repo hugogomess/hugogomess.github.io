@@ -16,7 +16,7 @@
         </tr>
         <tr>
           <td class="bold"><strong>Interested in</strong></td>
-          <td>Cyber security, Bug bounty, Cloud, Reversing</td>
+          <td>Cyber security, Bug bounty, Binary exploitation</td>
         </tr>
       </table>
     </div>
@@ -90,7 +90,7 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {};
-  }
+  },
 });
 </script>
 <style>
