@@ -1,9 +1,9 @@
 <template>
   <section class="section text-center">
     <img
-      src="../static/profile.jpg"
+      src="../static/chainsaw-man.gif"
       class="margin-bottom"
-      width="150"
+      width="400"
       height="auto"
       alt
     />
