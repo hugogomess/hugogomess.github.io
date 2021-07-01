@@ -1,5 +1,6 @@
 export default {
   email: "sukennzx@gmail.com",
+  discord: "sukenn#0487",
   links: {
     htb: "https://app.hackthebox.eu/profile/323852",
     twitter: "https://twitter.com/sukennzx",

@@ -14,6 +14,13 @@
 
     <br />
 
+    <h2>Discord:</h2>
+    <p class="contact-block">
+      {{ contact.discord }}
+    </p>
+
+    <br />
+
     <h2>Email:</h2>
     <p class="contact-block">
       &lt;{{ contact.email }}&gt; --
