@@ -57,9 +57,9 @@
       <h2>Education</h2>
       <table>
         <tr>
-          <td class="bold"><strong>Professional Pentest Bootcamp</strong></td>
+          <td class="bold"><strong>Professional Pentest Course</strong></td>
           <td>Desec Security</td>
-          <td>Dec 2020 - Present</td>
+          <td>Dec 2020 - Jul 2021</td>
         </tr>
         <tr>
           <td class="bold"><strong>Information System Bachelor</strong></td>
